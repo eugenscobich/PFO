@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="play" extends="main-page">
+		<put-attribute name="content" value="play-page"/>
+		<put-attribute name="baner" value="play-baner-page"/>
+	</definition>
+	<definition name="play-baner-page" template="/WEB-INF/views/play/baner-page.jsp"/>
+	<definition name="play-page" template="/WEB-INF/views/play/play-page.jsp"/>
+</tiles-definitions>

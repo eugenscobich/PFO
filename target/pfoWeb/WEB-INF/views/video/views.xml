@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="video" extends="main-page">
+		<put-attribute name="content" value="video-page"/>
+		<put-attribute name="sidebar" value="video-sidebar-page"/>
+		<put-attribute name="baner" value="video-baner-page"/>
+	</definition>
+	<definition name="video-page" template="/WEB-INF/views/video/video-page.jsp"/>
+	<definition name="video-baner-page" template="/WEB-INF/views/video/baner-page.jsp"/>
+	<definition name="video-sidebar-page" template="/WEB-INF/views/video/video-sidebar-page.jsp"/>
+</tiles-definitions>

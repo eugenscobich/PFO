@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="admin" extends="main-page">
+		<put-attribute name="content" value="admin-page"/>
+	</definition>
+	<definition name="admin-page" template="/WEB-INF/views/admin/admin-page.jsp"/>
+	
+	
+	<definition name="admin-edit-videoNews" extends="main-page">
+		<put-attribute name="content" value="admin-edit-videoNews-page"/>
+	</definition>
+	<definition name="admin-edit-videoNews-page" template="/WEB-INF/views/admin/admin-edit-videoNews-page.jsp"/>
+	
+</tiles-definitions>

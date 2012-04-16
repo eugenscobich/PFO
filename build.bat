@@ -1,0 +1,1 @@
+call mvn -e clean install -DskipTests

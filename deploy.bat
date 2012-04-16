@@ -1,0 +1,1 @@
+call mvn -e -X cargo:undeploy cargo:deploy	
