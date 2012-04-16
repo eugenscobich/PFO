@@ -14,7 +14,7 @@
 						onmouseout="endThumbChange(this.src, '${videoNews.id}')"
 						id="${videoNews.id}"> 
 				</a>
-				<h5 class="title">
+				<h5 class="title" title="Eugen">
 					<a href='<c:url value="${videoNews.playVideoUrl}"/>' title="${videoNews.title_ru}" class="title">${videoNews.title_ru}</a>
 				</h5>
 				<c:choose>
