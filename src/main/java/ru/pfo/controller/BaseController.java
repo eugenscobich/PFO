@@ -1,14 +1,18 @@
 package ru.pfo.controller;
 
+import java.io.IOException;
+import java.net.URLEncoder;
 import java.util.List;
 import java.util.Locale;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.NoSuchMessageException;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
 import ru.pfo.Constant;
@@ -59,5 +63,10 @@ public class BaseController {
 			LOG.warn(e);
 		}
 		return message;
+	}
+
+	@ExceptionHandler(Exception.class)
+	public String handleException(Exception ex, HttpServletRequest request, HttpServletResponse response) throws IOException {
+		return "redirect:/error?message=" + URLEncoder.encode(ex.toString(), "UTF-8") + "&code=500";
 	}
 }
