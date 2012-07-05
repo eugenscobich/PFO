@@ -100,9 +100,9 @@ public class CategoryService implements ICategoryService {
 
 	@Override
 	public void deleteVideoNewsesDoubles() {
-		List<Category> categories = getAllCategories();
-		for (Category category : categories) {
+		//List<Category> categories = getAllCategories();
+		/*for (Category category : categories) {
 
-		}
+		}*/
 	}
 }

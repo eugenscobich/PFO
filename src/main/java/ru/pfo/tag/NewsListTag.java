@@ -10,7 +10,6 @@ import java.util.Map;
 import javax.servlet.jsp.JspWriter;
 
 import org.apache.log4j.Logger;
-import org.springframework.web.context.WebApplicationContext;
 
 import ru.pfo.Constant;
 import ru.pfo.model.VideoNews;
@@ -25,7 +24,7 @@ public class NewsListTag extends BaseTag {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private WebApplicationContext _applicationContext;
+	//private WebApplicationContext _applicationContext;
 
 	public int doStartTag() {
 		test();
@@ -87,7 +86,7 @@ public class NewsListTag extends BaseTag {
 		return (SKIP_BODY);
 	}
 
-	public void test() {
+	private void test() {
 		JspWriter out = pageContext.getOut();
 		for (VideoNews videoNews: getVideoNewses()) {
 			String videoUrl =  videoNews.getId() + " " + videoNews.getTitle_tr() + ".html";
